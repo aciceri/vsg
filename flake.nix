@@ -11,22 +11,16 @@
     self,
     dream2nix,
     src,
-  } @ inp: (dream2nix.lib.makeFlakeOutputs {
-    systems = ["x86_64-linux"];
-    config.projectRoot = ./.;
-    source = src;
-    settings = [
-      {
-        # optionally define python version
-        subsystemInfo.pythonAttr = "python38";
-        # # optionally define extra setup requirements;
-        subsystemInfo.extraSetupDeps = ["cython > 0.29"];
-      }
-    ];
-  }) // {
-    apps.x86_64-linux.default = {
-      type = "app";
-      program = "${self.packages.x86_64-linux.main}/bin/vsg";
+  } @ inp:
+    (dream2nix.lib.makeFlakeOutputs {
+      systems = ["x86_64-linux"];
+      config.projectRoot = ./.;
+      source = src;
+    })
+    // {
+      apps.x86_64-linux.default = {
+        type = "app";
+        program = "${self.packages.x86_64-linux.main}/bin/vsg";
+      };
     };
-  };
 }
