@@ -1,0 +1,36 @@
+{
+  "_generic": {
+    "defaultPackage": "main",
+    "invalidationHash": "d0739e1fc7dea45c33398017011367ebbc93e4f9f54bc7075602cd8f05c2d8bd",
+    "location": "",
+    "packages": {
+      "main": "3.11.0"
+    },
+    "sourcesAggregatedHash": null,
+    "subsystem": "python"
+  },
+  "_subsystem": {
+    "application": false,
+    "pythonAttr": "python38",
+    "sourceFormats": {
+      "Cython": "wheel",
+      "PyYAML": "wheel"
+    }
+  },
+  "sources": {
+    "Cython": {
+      "0.29.30": {
+        "hash": "sha256-0PNLRAeOPgsvG+K5kERhmzcScSjn1VxUu9JDityvMdM=",
+        "type": "http",
+        "url": "https://files.pythonhosted.org/packages/cp38/C/Cython/Cython-0.29.30-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl"
+      }
+    },
+    "PyYAML": {
+      "6.0": {
+        "hash": "sha256-J3oO8pgcpAWBpHCT6eLROz8fu+/64GTB0hv866IDAoc=",
+        "type": "http",
+        "url": "https://files.pythonhosted.org/packages/cp38/P/PyYAML/PyYAML-6.0-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl"
+      }
+    }
+  }
+}
